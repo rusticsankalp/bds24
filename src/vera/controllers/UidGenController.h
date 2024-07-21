@@ -1,11 +1,13 @@
 #pragma once
 
 #include <drogon/HttpSimpleController.h>
-
+#include "snowflake.h"
 using namespace drogon;
+using namespace vera::uid;
 
 class UidGenController : public drogon::HttpSimpleController<UidGenController>
 {
+  vera::uid::snowflake<1534832906275L, std::mutex> uuid{1L,1L};
   public:
     void asyncHandleHttpRequest(const HttpRequestPtr& req, std::function<void (const HttpResponsePtr &)> &&callback) override;
     PATH_LIST_BEGIN
