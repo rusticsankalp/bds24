@@ -9,7 +9,9 @@
 #include <algorithm>
 
 typedef unsigned long long ull;
-ull findodd(ull start, ull end)
+const ull workStart{ 0 };
+const ull workEnd{ 1900000000 };
+ull findodd(ull start = workStart, ull end = workEnd)
 {
 	ull sum{0};
 	for (ull i = start; i <= end; i++)
@@ -21,7 +23,7 @@ ull findodd(ull start, ull end)
 	return sum;
 }
 
-ull findeven(ull start, ull end)
+ull findeven(ull start = workStart, ull end = workEnd)
 {
 	ull sum{ 0 };
 	for (ull i = start; i <= end; i++)
@@ -32,5 +34,7 @@ ull findeven(ull start, ull end)
 
 	return sum;
 }
+
+//Convert the above to lambda
 
 // TODO: Reference additional headers your program requires here.
