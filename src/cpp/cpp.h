@@ -35,6 +35,12 @@ ull findeven(ull start = workStart, ull end = workEnd)
 	return sum;
 }
 
+//:TBD 
 //Convert the above to lambda
+//Convert the above to fucntor ?
+
+
+// Observation
+// Static fucntion can also be used in threads
 
 // TODO: Reference additional headers your program requires here.
