@@ -1,1 +1,9 @@
 - Added C++20 via CMakeLists.txt
+  - Long Running function
+  - Co-operative cancellation 
+    - [x]using Stop Token 
+    - [ ] using stop_source ; potentially can be useful for cancelling multiple threads
+  - Examples
+    - [stop_token , stop_callback ](https://en.cppreference.com/w/cpp/thread/stop_callback)
+    - [stop_source_](https://en.cppreference.com/w/cpp/thread/stop_source)
+- 
